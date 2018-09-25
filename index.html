@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Vincent Nguyen -->
+<!-- September 2018 -->
+<!-- https://vncegd.github.io/five/index.html -->
+
+<html>
+    <head>
+        <title>five</title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="five.css">
+    </head>
+    <body>
+        <div class="jumbo" id="jumbo">
+            <div class="col-1">
+                <div class="navLink">
+                    <a href="#blue"><button class="blueLink"></button></a>
+                </div>
+                <div class="navLink">
+                    <a href="#red"><button class="redLink"></button></a>
+                </div>
+                <div class="navLink">
+                    <a href="#green"><button class="greenLink"></button></a>
+                </div>
+                <div class="navLink">
+                    <a href="#yellow"><button class="yellowLink"></button></a>
+                </div>
+                <div class="navLink">
+                    <a href="#grey"><button class="greyLink"></button></a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="letter">f</div>
+            </div>
+            <div class="col-3">
+                <div class="letter">i</div>
+            </div>
+            <div class="col-4">
+                <div class="letter">v</div>
+            </div>
+            <div class="col-5">
+                <div class="letter">e</div>
+            </div>
+        </div>
+        <div class="blue" id="blue">
+            <a href="#jumbo"><i class="fas fa-chevron-up"></i></a><br>
+            <img class="image" src="blue.png"/><br>
+            <a href="#red"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="red" id="red">
+            <a href="#blue"><i class="fas fa-chevron-up"></i></a><br>
+            <img class="image" src="red.png"/><br>
+            <a href="#green"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="green" id="green">
+            <a href="#red"><i class="fas fa-chevron-up"></i></a><br>
+            <img class="image" src="green.png"/><br>
+            <a href="#yellow"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="yellow" id="yellow">
+            <a href="#green"><i class="fas fa-chevron-up"></i></a><br>
+            <img class="image" src="yellow.png"/><br>
+            <a href="#grey"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="grey" id="grey">
+            <a href="#yellow"><i class="fas fa-chevron-up"></i></a><br>
+            <img class="image" src="grey.png"/>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+        //Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
+        //Creates a smooth scrolling effect when links are clicked.
+        $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navLink a, .blue a, .red a, .green a, .yellow a, .grey a").on('click', function(event) {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+                // Store hash
+                var hash = this.hash;
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 500, function(){
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                });
+            });
+        })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+/* Vincent Nguyen */
+/* September 2018 */
+/* five.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+.jumbo, .blue, .red, .green, .yellow, .grey {
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #eee;
+}
+.blue, .red, .green, .yellow, .grey {
+    box-shadow: inset 0 0 1rem 0 #000;
+    box-shadow: inset 0 0 1rem 0 #000000aa;
+}
+.blue i, .red i, .green i, .yellow i, .grey i {
+    bottom: 0;
+    height: 7%;
+    color: #FFF;
+    padding: 1rem;
+    font-size: 7vmin;
+    text-shadow: 0 0 1rem #000;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5 {
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.col-1 {
+    background-color: #9E9E9E;
+}
+button {
+    width: 5vmin;
+    height: 5vmin;
+}
+.navLink {
+    margin: 0;
+    width: 100%;
+    height: 20%;
+}
+.blueLink, .redLink, .greenLink, .yellowLink, .greyLink {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-right: 1vmin solid #9E9E9E;
+    transition: .2s;
+}
+.blueLink:hover, .redLink:hover, .greenLink:hover, .yellowLink:hover, .greyLink:hover {
+    border-right: 1vmin solid #FAFAFA;
+    cursor: pointer;
+    transition: .1s;
+}
+.blueLink {
+    background-color: #2196F3;
+    background-image: url("blue.png");
+}
+.redLink {
+    background-color: #F44336;
+    background-image: url("red.png");
+}
+.greenLink {
+    background-color: #4CAF50;
+    background-image: url("green.png");
+}
+.yellowLink {
+    background-color: #FFEB3B;
+    background-image: url("yellow.png");
+}
+.greyLink {
+    background-color: #9E9E9E;
+    background-image: url("grey.png");
+}
+.col-2 {
+    color: #0D47A1;
+    background-color: #2196F3;
+    box-shadow: inset 0 -1rem 2rem 0 #0D47A1;
+    box-shadow: inset 0 -0.5rem 5rem 0 #0D47A190;
+}
+.col-3 {
+    color: #B71C1C;
+    background-color: #F44336;
+    box-shadow: inset 0 -1rem 2rem 0 #B71C1C;
+    box-shadow: inset 0 -0.5rem 5rem 0 #B71C1C90;
+}
+.col-4 {
+    color: #1B5E20;
+    background-color: #4CAF50;
+    box-shadow: inset 0 -1rem 2rem 0 #1B5E20;
+    box-shadow: inset 0 -0.5rem 5rem 0 #1B5E2090;
+}
+.col-5 {
+    color: #F57F17;
+    background-color: #FFEB3B;
+    box-shadow: inset 0 -1rem 2rem 0 #F57F17;
+    box-shadow: inset 0 -0.5rem 5rem 0 #F57F1790;
+}
+.letter {
+    position: relative;
+    top: 40vmin;
+    font-size: 20vmin;
+    font-weight: bold;
+}
+.image {
+    height: 70%;
+    box-shadow: 0 0 1rem #000;
+}
