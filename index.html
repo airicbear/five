@@ -44,27 +44,32 @@
         </div>
         <div class="blue" id="blue">
             <a href="#jumbo"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="blue.png"/><br>
+            <img class="image" src="blue.png"/><br><br>
+            <a href="https://i.imgur.com/5H6XNfV.png">Version without Text</a> <br>
             <a href="#red"><i class="fas fa-chevron-down"></i></a>
         </div>
         <div class="red" id="red">
             <a href="#blue"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="red.png"/><br>
+            <img class="image" src="red.png"/><br><br>
+            <a href="https://i.imgur.com/a7y1ueC.png">Version without Text</a> <br>
             <a href="#green"><i class="fas fa-chevron-down"></i></a>
         </div>
         <div class="green" id="green">
             <a href="#red"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="green.png"/><br>
+            <img class="image" src="green.png"/><br><br>
+            <a href="https://i.imgur.com/nkF4JGV.png">Version without Text</a> <br>
             <a href="#yellow"><i class="fas fa-chevron-down"></i></a>
         </div>
         <div class="yellow" id="yellow">
             <a href="#green"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="yellow.png"/><br>
+            <img class="image" src="yellow.png"/><br><br>
+            <a href="https://i.imgur.com/QySQXzs.png">Version without Text</a> <br>
             <a href="#grey"><i class="fas fa-chevron-down"></i></a>
         </div>
         <div class="grey" id="grey">
             <a href="#yellow"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="grey.png"/>
+            <img class="image" src="grey.png"/><br><br>
+            <a href="https://i.imgur.com/cgiUp3A.png">Version without Text</a> <br>
         </div>
 
         <!-- SCRIPTS -->
@@ -73,18 +78,12 @@
         //Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
         //Creates a smooth scrolling effect when links are clicked.
         $(document).ready(function(){
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navLink a, .blue a, .red a, .green a, .yellow a, .grey a").on('click', function(event) {
-                // Prevent default anchor click behavior
+            $(".navLink a, .blue a[href='#jumbo'], .blue a[href='#red'], .red a[href='#blue'], .red a[href='#green'], .green a[href='#red'], .green a[href='#yellow'], .yellow a[href='#green'], .yellow a[href='#grey'], .grey a[href='#yellow']").on('click', function(event) {
                 event.preventDefault();
-                // Store hash
                 var hash = this.hash;
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                 scrollTop: $(hash).offset().top
                 }, 500, function(){
-                // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
                 });
             });
