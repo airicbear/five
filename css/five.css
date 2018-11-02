@@ -1,376 +1,236 @@
-Vincent Nguyen
-/* September 2018 */
-/* five.css */
+/* 
+  Vincent Nguyen
+  September 2018
+  five.css 
+*/
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: dashed 2px rgba(0, 0, 0, 0.15);
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.25);
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
 }
 
 a {
-    color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.div-link {
+  height: 100%;
+  background-size: cover;
+  border-right: 1vmin solid rgb(65, 65, 65);
+  filter: brightness(70%);
 }
 
-a:focus {
-    color: rgb(255, 255, 255);
+.div-link:focus,
+.div-link:hover {
+  cursor: pointer;
+  filter: none;
+  transition: 0.25s;
+  outline: none;
+  filter: grayscale(0%);
 }
 
-.top,
-.blue,
-.red,
-.green,
-.yellow,
-.grey {
-    height: 100vh;
-    text-align: center;
+.col {
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.15);
+  width: 20%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+.letter {
+  color: rgba(0, 0, 0, 0.35);
+  position: relative;
+  top: 40vmin;
+  font-size: 20vmin;
+  font-weight: bold;
+}
+
+.letter.f::after {
+  content: "f";
+}
+
+.letter.i::after {
+  content: "i";
+}
+
+.letter.v::after {
+  content: "v";
+}
+
+.letter.e::after {
+  content: "e";
+}
+
+.fs-0 {
+  font-size: 0;
+}
+
+.h-100 {
+  height: 100vh;
 }
 
 .bg {
-    transition: 0.25s;
+  transition: 0.25s;
 }
 
 .bg:hover {
-    filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 .fa-chevron-up,
 .fa-chevron-down {
-    bottom: 0;
-    height: 7vh;
-    color: white;
-    font-size: 7vmin;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 7vmin;
+  transition: 0.25s;
 }
 
 .fa-chevron-up {
-    margin: 3vh 0 3vh 0;
+  margin: 3vh 0 3vh 0;
 }
 
 .fa-chevron-down {
-    margin: 3vh 0 0 0;
+  margin: 3vh 0 0 0;
 }
 
+.fa-chevron-up:focus,
+.fa-chevron-down:focus,
 .fa-chevron-up:hover,
 .fa-chevron-down:hover {
-    opacity: 0.75;
-    transition: 0.25s;
+  color: white;
 }
 
-.fs-0 {
-    font-size: 0;
-}
-
-.col {
-    box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.15);
-    color: rgba(0, 0, 0, 0.35);
-    width: 20%;
-    height: 100%;
-    float: left;
-    text-align: center;
+.image-container a:hover {
+  text-decoration: underline;
 }
 
 .image-container>* {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.image-container > a {
-    max-width: 200px;
+.image-container>a {
+  max-width: 25vh;
+  text-align: center;
 }
 
-.navLink {
-    height: 20vh;
-}
-
-.navLink * {
-    outline: none;
-}
-
-.navLink *:hover,
-.navLink *:focus {
-    filter: brightness(110%);
-}
-
-.divLink {
-    height: 100%;
-    background-size: cover;
-    border-right: 1vmin solid rgb(65, 65, 65);
-    transition: .2s;
-}
-
-.divLink:hover {
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-.divLink:focus {
-    border: inset 1vmin;
-    outline: none;
-}
-
-.navLink button {
-    outline: none;
+.row-5 {
+  height: 20vh;
 }
 
 .blue,
-.blueLink {
-    background-color: rgba(33, 149, 243, 0.5);
+.blue-link {
+  background-color: rgba(33, 149, 243, 0.5);
 }
 
-.blueLink {
-    background-image: url("../img/text/blue-t.png");
+.blue-link {
+  background-image: url("../img/text/blue-t.png");
 }
 
-.blueLink:hover {
-    border-right: 1vmin solid rgb(84, 174, 247);
+.blue-link:focus,
+.blue-link:hover {
+  border-right: 1vmin solid rgb(84, 174, 247);
 }
 
 .red,
-.redLink {
-    background-color: rgba(244, 67, 54, 0.5);
+.red-link {
+  background-color: rgba(244, 67, 54, 0.5);
 }
 
-.redLink {
-    background-image: url("../img/text/red-t.png");
+.red-link {
+  background-image: url("../img/text/red-t.png");
 }
 
-.redLink:hover {
-    border-right: 1vmin solid rgb(202, 89, 81);
+.red-link:focus,
+.red-link:hover {
+  border-right: 1vmin solid rgb(202, 89, 81);
 }
 
 .green,
-.greenLink {
-    background-color: rgba(76, 175, 79, 0.5);
+.green-link {
+  background-color: rgba(76, 175, 79, 0.5);
 }
 
-.greenLink {
-    background-image: url("../img/text/green-t.png");
+.green-link {
+  background-image: url("../img/text/green-t.png");
 }
 
-.greenLink:hover {
-    border-right: 1vmin solid rgb(151, 212, 153);
+.green-link:focus,
+.green-link:hover {
+  border-right: 1vmin solid rgb(151, 212, 153);
 }
 
 .yellow,
-.yellowLink {
-    background-color: rgba(255, 235, 59, 0.5);
+.yellow-link {
+  background-color: rgba(255, 235, 59, 0.5);
 }
 
-.yellowLink {
-    background-image: url("../img/text/yellow-t.png");
+.yellow-link {
+  background-image: url("../img/text/yellow-t.png");
 }
 
-.yellowLink:hover {
-    border-right: 1vmin solid rgb(255, 246, 163);
+.yellow-link:focus,
+.yellow-link:hover {
+  border-right: 1vmin solid rgb(255, 246, 163);
 }
 
 .grey,
-.greyLink {
-    background-color: rgba(158, 158, 158, 0.5);
+.grey-link {
+  background-color: rgba(158, 158, 158, 0.5);
 }
 
-.greyLink {
-    background-image: url("../img/text/grey-t.png");
+.grey-link {
+  background-image: url("../img/text/grey-t.png");
 }
 
-.greyLink:hover {
-    border-right: 1vmin solid rgb(204, 204, 204);
+.grey-link:focus,
+.grey-link:hover {
+  border-right: 1vmin solid rgb(204, 204, 204);
 }
 
 .bg-blue {
-    background-color: #2196F3;
+  background-color: #2196F3;
 }
 
 .bg-red {
-    background-color: #F44336;
+  background-color: #F44336;
 }
 
 .bg-green {
-    background-color: #4CAF50;
+  background-color: #4CAF50;
 }
 
 .bg-yellow {
-    background-color: #FFEB3B;
+  background-color: #FFEB3B;
 }
 
-.letter {
-    position: relative;
-    top: 40vmin;
-    font-size: 20vmin;
-    font-weight: bold;
+.pxart-img {
+  height: 70vh;
+  border: solid 5px rgba(0, 0, 0, 0.15);
+  transition: 0.25s;
 }
 
-.image {
-    height: 70vh;
-    border: solid 5px rgba(0, 0, 0, 0.15);
-    transition: 0.25s;
+.pxart-img:hover {
+  border: solid 5px rgba(116, 116, 116, 0.15);
 }
 
-.image:hover {
-    border: solid 5px rgba(116, 116, 116, 0.15);
-}
-
-@media only screen and (max-width: 1000px) {
-    .col {
-        display: grid;
-        float: initial;
-        width: 100%;
-        height: 20%;
-    }
-
-    .bg-blue,
-    .bg-green,
-    .bg-red,
-    .bg-yellow {
-        display: none;
-    }
-
-    .divLink {
-        background-size: contain;
-        background-repeat: no-repeat;
-        box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.15);
-    }
-
-    .divLink::after {
-        font-size: 64px;
-        margin-left: 250px;
-        font-size: 20vmin;
-        font-weight: bold;
-    }
-
-    .blueLink {
-        background-color: #2196F3;
-    }
-
-    .blueLink::after {
-        content: "f";
-    }
-
-    .redLink {
-        background-color: #F44336;
-    }
-
-    .redLink::after {
-        content: "i";
-    }
-
-    .greenLink {
-        background-color: #4CAF50;
-    }
-
-    .greenLink::after {
-        content: "v";
-    }
-
-    .yellowLink {
-        background-color: #FFEB3B;
-    }
-
-    .yellowLink::after {
-        content: "e";
-    }
-
-    .greyLink {
-        background-color: rgba(158, 158, 158);
-    }
-
-    .greyLink::after {
-        content: ".";
-    }
-}
-
-@media only screen and (min-width: 850px) and (max-width: 900px) {
-    .image {
-        height: 60vh;
-    }
-
-    .fa-chevron-up {
-        margin: 4vh 0 5vh 0;
-    }
-
-    .fa-chevron-down {
-        margin: 5vh 0 0 0;
-    }
-}
-
-@media only screen and (min-width: 750px) and (max-width: 850px) {
-    .image {
-        height: 55vh;
-    }
-
-    .fa-chevron-up {
-        margin: 5vh 0 5vh 0;
-    }
-
-    .fa-chevron-down {
-        margin: 5vh 0 5vh 0;
-    }
-}
-
-@media only screen and (min-width: 650px) and (max-width: 750px) {
-    .image {
-        height: 45vh;
-    }
-
-    .fa-chevron-up {
-        margin: 10vh 0 3vh 0;
-    }
-
-    .fa-chevron-down {
-        margin: 4vh 0 10vh 0;
-    }
-}
-
-@media only screen and (min-width: 550px) and (max-width: 650px) {
-    .image {
-        height: 40vh;
-    }
-
-    .fa-chevron-up {
-        margin: 15vh 0 0 0;
-    }
-
-    .fa-chevron-down {
-        margin: 1vh 0 15vh 0;
-    }
-}
-
-@media only screen and (min-width: 450px) and (max-width: 550px) {
-    .image {
-        height: 30vh;
-    }
-
-    .fa-chevron-up {
-        margin: 20vh 0 0 0;
-    }
-
-    .fa-chevron-down {
-        margin: 2vh 0 20vh 0;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .image {
-        height: 20vh;
-    }
-
-    .fa-chevron-up {
-        margin: 30vh 0 0 0;
-    }
-
-    .fa-chevron-down {
-        margin: 3vh 0 25vh 0;
-    }
+.pxart-img:focus {
+  border: solid 5px rgba(255, 255, 255, 0.55);
+  outline: none;
 }
