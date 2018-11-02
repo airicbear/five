@@ -17,7 +17,6 @@ body {
 
 a {
     color: rgba(0, 0, 0, 0.5);
-    outline: none;
     text-decoration: none;
 }
 
@@ -56,18 +55,21 @@ a:focus {
 }
 
 .fa-chevron-up {
-    margin: 1vh 0 3vh 0;
+    margin: 3vh 0 3vh 0;
 }
 
 .fa-chevron-down {
     margin: 3vh 0 0 0;
 }
 
-
 .fa-chevron-up:hover,
 .fa-chevron-down:hover {
     opacity: 0.75;
     transition: 0.25s;
+}
+
+.fs-0 {
+    font-size: 0;
 }
 
 .col {
@@ -79,8 +81,13 @@ a:focus {
     text-align: center;
 }
 
-.col {
+.image-container>* {
+    display: block;
+    margin: 0 auto;
+}
 
+.image-container > a {
+    max-width: 200px;
 }
 
 .navLink {
@@ -93,7 +100,7 @@ a:focus {
 
 .navLink *:hover,
 .navLink *:focus {
-    opacity: 0.9;
+    filter: brightness(110%);
 }
 
 .divLink {
@@ -254,7 +261,7 @@ a:focus {
     .redLink {
         background-color: #F44336;
     }
-    
+
     .redLink::after {
         content: "i";
     }
@@ -262,7 +269,7 @@ a:focus {
     .greenLink {
         background-color: #4CAF50;
     }
-    
+
     .greenLink::after {
         content: "v";
     }
@@ -270,7 +277,7 @@ a:focus {
     .yellowLink {
         background-color: #FFEB3B;
     }
-    
+
     .yellowLink::after {
         content: "e";
     }
@@ -360,7 +367,7 @@ a:focus {
     }
 
     .fa-chevron-up {
-        margin: 25vh 0 0 0;
+        margin: 30vh 0 0 0;
     }
 
     .fa-chevron-down {

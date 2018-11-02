@@ -6,11 +6,13 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>five</title>
-
+  <meta name="description" content="A website dedicated to pixel art experimentation using five color palettes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/general.css">
   <link rel="stylesheet" href="./css/five.css">
 </head>
 
@@ -18,19 +20,29 @@
   <div class="top" id="top">
     <div class="col">
       <div class="navLink">
-        <a href="#blue"><div class="navLink blueLink divLink"></div></a>
+        <a href="#blue" class="fs-0">
+          <div class="blueLink divLink">Scroll to the blue image. </div>
+        </a>
       </div>
       <div class="navLink">
-        <a href="#red"><div class="redLink divLink"></div></a>
+        <a href="#red" class="fs-0">
+          <div class="redLink divLink">Scroll to the red image. </div>
+        </a>
       </div>
       <div class="navLink">
-        <a href="#green"><div class="greenLink divLink"></div></a>
+        <a href="#green" class="fs-0">
+          <div class="greenLink divLink">Scroll to the green image. </div>
+        </a>
       </div>
       <div class="navLink">
-        <a href="#yellow"><div class="yellowLink divLink"></div></a>
+        <a href="#yellow" class="fs-0">
+          <div class="yellowLink divLink">Scroll to the yellow image. </div>
+        </a>
       </div>
       <div class="navLink">
-        <a href="#grey"><div class="greyLink divLink"></div></a>
+        <a href="#grey" class="fs-0">
+          <div class="greyLink divLink">Scroll to the grey image. </div>
+        </a>
       </div>
     </div>
     <div class="col bg bg-blue">
@@ -46,36 +58,65 @@
       <div class="letter">e</div>
     </div>
   </div>
-  <div class="blue" id="blue">
-    <a href="#top"><i class="fas fa-chevron-up"></i></a><br>
-    <img class="image" src="./img/text/blue-t.png" alt="Pixel art image in blue" /><br><br>
-    <a href="./img/no-text/blue-nt.png">Version without text</a> <br>
-    <a href="#red"><i class="fas fa-chevron-down"></i></a>
+  <div class="blue image-container" id="blue">
+    <a href="#top" class="fs-0">
+      Scroll up to the top.
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <img class="image" src="./img/text/blue-t.png" alt="Blue palette pixel art image of a blue sunset horizon with mountains and clouds in the background" />
+    <a href="./img/no-text/blue-nt.png"><i class="fas fa-external-link-alt"></i>Image without text</a>
+    <br>
+    <a href="#red" class="fs-0">
+      Scroll down to the red image.
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </div>
-  <div class="red" id="red">
-    <a href="#blue"><i class="fas fa-chevron-up"></i></a><br>
-    <img class="image" src="./img/text/red-t.png" alt="Pixel art image in red" /><br><br>
-    <a href="./img/no-text/red-nt.png">Version without text</a> <br>
-    <a href="#green"><i class="fas fa-chevron-down"></i></a>
+  <div class="red image-container" id="red">
+    <a href="#blue" class="fs-0">
+      Scroll up to the blue image.
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <img class="image" src="./img/text/red-t.png" alt="Red palette pixel art image of red hearts and feathers" /><br><br>
+    <a href="./img/no-text/red-nt.png"><i class="fas fa-external-link-alt"></i>Image without text</a>
+    <a href="#green" class="fs-0">
+      Scroll down to the green image.
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </div>
-  <div class="green" id="green">
-    <a href="#red"><i class="fas fa-chevron-up"></i></a><br>
-    <img class="image" src="./img/text/green-t.png" alt="Pixel art image in green" /><br><br>
-    <a href="./img/no-text/green-nt.png">Version without text</a> <br>
-    <a href="#yellow"><i class="fas fa-chevron-down"></i></a>
+  <div class="green image-container" id="green">
+    <a href="#red" class="fs-0">
+      Scroll up to the red image.
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <img class="image" src="./img/text/green-t.png" alt="Green palette pixel art image of a forest with two large trees in the foreground" />
+    <a href="./img/no-text/green-nt.png"><i class="fas fa-external-link-alt"></i>Image without text</a>
+    <a href="#yellow" class="fs-0">
+      Scroll down to the yellow image.
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </div>
-  <div class="yellow" id="yellow">
-    <a href="#green"><i class="fas fa-chevron-up"></i></a><br>
-    <img class="image" src="./img/text/yellow-t.png" alt="Pixel art image in yellow" /><br><br>
-    <a href="./img/no-text/yellow-nt.png">Version without text</a> <br>
-    <a href="#grey"><i class="fas fa-chevron-down"></i></a>
+  <div class="yellow image-container" id="yellow">
+    <a href="#green" class="fs-0">
+      Scroll up to the green image.
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <img class="image" src="./img/text/yellow-t.png" alt="Yellow palette pixel art image of a sunset with three Egyptian pyramids in the background" />
+    <a href="./img/no-text/yellow-nt.png"><i class="fas fa-external-link-alt"></i>Image without text</a>
+    <a href="#grey" class="fs-0">
+      Scroll down to the grey image.
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </div>
-  <div class="grey" id="grey">
-    <a href="#yellow"><i class="fas fa-chevron-up"></i></a><br>
-    <img class="image" src="./img/text/grey-t.png" alt="Pixel art image in grey" /><br><br>
-    <a href="./img/no-text/grey-nt.png">Version without text</a> <br>
+  <div class="grey image-container" id="grey">
+    <a href="#yellow" class="fs-0">
+      Scroll up to the yellow image.
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <img class="image" src="./img/text/grey-t.png" alt="Gray palette pixel art image of a dark empty room on a rainy day" />
+    <a href="./img/no-text/grey-nt.png"><i class="fas fa-external-link-alt"></i>Image without text</a>
   </div>
   <script>
+    // Anchor jump
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
