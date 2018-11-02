@@ -4,90 +4,87 @@
 <!-- https://vncegd.github.io/five/index.html -->
 
 <html>
-    <head>
-        <title>five</title>
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link rel="stylesheet" href="five.css">
-    </head>
-    <body>
-        <div class="jumbo" id="jumbo">
-            <div class="col-1">
-                <div class="navLink">
-                    <a href="#blue"><button class="blueLink"></button></a>
-                </div>
-                <div class="navLink">
-                    <a href="#red"><button class="redLink"></button></a>
-                </div>
-                <div class="navLink">
-                    <a href="#green"><button class="greenLink"></button></a>
-                </div>
-                <div class="navLink">
-                    <a href="#yellow"><button class="yellowLink"></button></a>
-                </div>
-                <div class="navLink">
-                    <a href="#grey"><button class="greyLink"></button></a>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="letter">f</div>
-            </div>
-            <div class="col-3">
-                <div class="letter">i</div>
-            </div>
-            <div class="col-4">
-                <div class="letter">v</div>
-            </div>
-            <div class="col-5">
-                <div class="letter">e</div>
-            </div>
-        </div>
-        <div class="blue" id="blue">
-            <a href="#jumbo"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="blue.png"/><br><br>
-            <a href="https://i.imgur.com/5H6XNfV.png">Version without Text</a> <br>
-            <a href="#red"><i class="fas fa-chevron-down"></i></a>
-        </div>
-        <div class="red" id="red">
-            <a href="#blue"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="red.png"/><br><br>
-            <a href="https://i.imgur.com/a7y1ueC.png">Version without Text</a> <br>
-            <a href="#green"><i class="fas fa-chevron-down"></i></a>
-        </div>
-        <div class="green" id="green">
-            <a href="#red"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="green.png"/><br><br>
-            <a href="https://i.imgur.com/nkF4JGV.png">Version without Text</a> <br>
-            <a href="#yellow"><i class="fas fa-chevron-down"></i></a>
-        </div>
-        <div class="yellow" id="yellow">
-            <a href="#green"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="yellow.png"/><br><br>
-            <a href="https://i.imgur.com/QySQXzs.png">Version without Text</a> <br>
-            <a href="#grey"><i class="fas fa-chevron-down"></i></a>
-        </div>
-        <div class="grey" id="grey">
-            <a href="#yellow"><i class="fas fa-chevron-up"></i></a><br>
-            <img class="image" src="grey.png"/><br><br>
-            <a href="https://i.imgur.com/cgiUp3A.png">Version without Text</a> <br>
-        </div>
+<head>
+  <title>five</title>
 
-        <!-- SCRIPTS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script>
-        //Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
-        //Creates a smooth scrolling effect when links are clicked.
-        $(document).ready(function(){
-            $(".navLink a, .blue a[href='#jumbo'], .blue a[href='#red'], .red a[href='#blue'], .red a[href='#green'], .green a[href='#red'], .green a[href='#yellow'], .yellow a[href='#green'], .yellow a[href='#grey'], .grey a[href='#yellow']").on('click', function(event) {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                scrollTop: $(hash).offset().top
-                }, 500, function(){
-                window.location.hash = hash;
-                });
-            });
-        })
-        </script>
-    </body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/five.css">
+</head>
+
+<body>
+  <div class="top" id="top">
+    <div class="col">
+      <div class="navLink">
+        <a href="#blue"><div class="navLink blueLink divLink"></div></a>
+      </div>
+      <div class="navLink">
+        <a href="#red"><div class="redLink divLink"></div></a>
+      </div>
+      <div class="navLink">
+        <a href="#green"><div class="greenLink divLink"></div></a>
+      </div>
+      <div class="navLink">
+        <a href="#yellow"><div class="yellowLink divLink"></div></a>
+      </div>
+      <div class="navLink">
+        <a href="#grey"><div class="greyLink divLink"></div></a>
+      </div>
+    </div>
+    <div class="col bg bg-blue">
+      <div class="letter">f</div>
+    </div>
+    <div class="col bg bg-red">
+      <div class="letter">i</div>
+    </div>
+    <div class="col bg bg-green">
+      <div class="letter">v</div>
+    </div>
+    <div class="col bg bg-yellow">
+      <div class="letter">e</div>
+    </div>
+  </div>
+  <div class="blue" id="blue">
+    <a href="#top"><i class="fas fa-chevron-up"></i></a><br>
+    <img class="image" src="./img/text/blue-t.png" alt="Pixel art image in blue" /><br><br>
+    <a href="./img/no-text/blue-nt.png">Version without text</a> <br>
+    <a href="#red"><i class="fas fa-chevron-down"></i></a>
+  </div>
+  <div class="red" id="red">
+    <a href="#blue"><i class="fas fa-chevron-up"></i></a><br>
+    <img class="image" src="./img/text/red-t.png" alt="Pixel art image in red" /><br><br>
+    <a href="./img/no-text/red-nt.png">Version without text</a> <br>
+    <a href="#green"><i class="fas fa-chevron-down"></i></a>
+  </div>
+  <div class="green" id="green">
+    <a href="#red"><i class="fas fa-chevron-up"></i></a><br>
+    <img class="image" src="./img/text/green-t.png" alt="Pixel art image in green" /><br><br>
+    <a href="./img/no-text/green-nt.png">Version without text</a> <br>
+    <a href="#yellow"><i class="fas fa-chevron-down"></i></a>
+  </div>
+  <div class="yellow" id="yellow">
+    <a href="#green"><i class="fas fa-chevron-up"></i></a><br>
+    <img class="image" src="./img/text/yellow-t.png" alt="Pixel art image in yellow" /><br><br>
+    <a href="./img/no-text/yellow-nt.png">Version without text</a> <br>
+    <a href="#grey"><i class="fas fa-chevron-down"></i></a>
+  </div>
+  <div class="grey" id="grey">
+    <a href="#yellow"><i class="fas fa-chevron-up"></i></a><br>
+    <img class="image" src="./img/text/grey-t.png" alt="Pixel art image in grey" /><br><br>
+    <a href="./img/no-text/grey-nt.png">Version without text</a> <br>
+  </div>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>
