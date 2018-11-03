@@ -78,7 +78,7 @@
   }
 
   .fa-chevron-up {
-    margin: 4vh 0 5vh 0;
+    margin: 6vh 0 4vh 0;
   }
 
   .fa-chevron-down {
@@ -92,7 +92,7 @@
   }
 
   .fa-chevron-up {
-    margin: 5vh 0 5vh 0;
+    margin: 8vh 0 5vh 0;
   }
 
   .fa-chevron-down {
@@ -106,11 +106,11 @@
   }
 
   .fa-chevron-up {
-    margin: 10vh 0 3vh 0;
+    margin: 8vh 0 8vh 0;
   }
 
   .fa-chevron-down {
-    margin: 4vh 0 10vh 0;
+    margin: 10vh 0 8vh 0;
   }
 }
 
@@ -120,11 +120,11 @@
   }
 
   .fa-chevron-up {
-    margin: 15vh 0 0 0;
+    margin: 10vh 0 8vh 0;
   }
 
   .fa-chevron-down {
-    margin: 1vh 0 15vh 0;
+    margin: 10vh 0 4vh 0;
   }
 }
 
@@ -134,24 +134,24 @@
   }
 
   .fa-chevron-up {
-    margin: 20vh 0 0 0;
+    margin: 15vh 0 10vh 0;
   }
 
   .fa-chevron-down {
-    margin: 2vh 0 20vh 0;
+    margin: 10vh 0 15vh 0;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .pxart-img {
-    height: 20vh;
+    height: 25vh;
   }
 
   .fa-chevron-up {
-    margin: 30vh 0 0 0;
+    margin: 18vh 0 10vh 0;
   }
 
   .fa-chevron-down {
-    margin: 3vh 0 25vh 0;
+    margin: 10vh 0 15vh 0;
   }
 }
