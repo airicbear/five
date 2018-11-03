@@ -1,0 +1,236 @@
+/* 
+  Vincent Nguyen
+  September 2018
+  five.css 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: dashed 2px rgba(0, 0, 0, 0.15);
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.div-link {
+  height: 100%;
+  background-size: cover;
+  border-right: 1vmin solid rgb(65, 65, 65);
+  filter: brightness(70%);
+}
+
+.div-link:focus,
+.div-link:hover {
+  cursor: pointer;
+  filter: none;
+  transition: 0.25s;
+  outline: none;
+  filter: grayscale(0%);
+}
+
+.col {
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.15);
+  width: 20%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+.letter {
+  color: rgba(0, 0, 0, 0.35);
+  position: relative;
+  top: 40vmin;
+  font-size: 20vmin;
+  font-weight: bold;
+}
+
+.letter.f::after {
+  content: "f";
+}
+
+.letter.i::after {
+  content: "i";
+}
+
+.letter.v::after {
+  content: "v";
+}
+
+.letter.e::after {
+  content: "e";
+}
+
+.fs-0 {
+  font-size: 0;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.bg {
+  transition: 0.25s;
+}
+
+.bg:hover {
+  filter: brightness(110%);
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 7vmin;
+  transition: 0.25s;
+}
+
+.fa-chevron-up {
+  margin: 3vh 0 3vh 0;
+}
+
+.fa-chevron-down {
+  margin: 3vh 0 0 0;
+}
+
+.fa-chevron-up:focus,
+.fa-chevron-down:focus,
+.fa-chevron-up:hover,
+.fa-chevron-down:hover {
+  color: white;
+}
+
+.image-container a:hover {
+  text-decoration: underline;
+}
+
+.image-container>* {
+  display: block;
+  margin: 0 auto;
+}
+
+.image-container>a {
+  max-width: 170px;
+  text-align: center;
+}
+
+.row-5 {
+  height: 20vh;
+}
+
+.blue,
+.blue-link {
+  background-color: rgba(33, 149, 243, 0.5);
+}
+
+.blue-link {
+  background-image: url("../img/text/blue-t.png");
+}
+
+.blue-link:focus,
+.blue-link:hover {
+  border-right: 1vmin solid rgb(84, 174, 247);
+}
+
+.red,
+.red-link {
+  background-color: rgba(244, 67, 54, 0.5);
+}
+
+.red-link {
+  background-image: url("../img/text/red-t.png");
+}
+
+.red-link:focus,
+.red-link:hover {
+  border-right: 1vmin solid rgb(202, 89, 81);
+}
+
+.green,
+.green-link {
+  background-color: rgba(76, 175, 79, 0.5);
+}
+
+.green-link {
+  background-image: url("../img/text/green-t.png");
+}
+
+.green-link:focus,
+.green-link:hover {
+  border-right: 1vmin solid rgb(151, 212, 153);
+}
+
+.yellow,
+.yellow-link {
+  background-color: rgba(255, 235, 59, 0.5);
+}
+
+.yellow-link {
+  background-image: url("../img/text/yellow-t.png");
+}
+
+.yellow-link:focus,
+.yellow-link:hover {
+  border-right: 1vmin solid rgb(255, 246, 163);
+}
+
+.grey,
+.grey-link {
+  background-color: rgba(158, 158, 158, 0.5);
+}
+
+.grey-link {
+  background-image: url("../img/text/grey-t.png");
+}
+
+.grey-link:focus,
+.grey-link:hover {
+  border-right: 1vmin solid rgb(204, 204, 204);
+}
+
+.bg-blue {
+  background-color: #2196F3;
+}
+
+.bg-red {
+  background-color: #F44336;
+}
+
+.bg-green {
+  background-color: #4CAF50;
+}
+
+.bg-yellow {
+  background-color: #FFEB3B;
+}
+
+.pxart-img {
+  height: 70vh;
+  border: solid 5px rgba(0, 0, 0, 0.15);
+  transition: 0.25s;
+}
+
+.pxart-img:hover {
+  border: solid 5px rgba(116, 116, 116, 0.15);
+}
+
+.pxart-img:focus {
+  border: solid 5px rgba(255, 255, 255, 0.55);
+  outline: none;
+}
