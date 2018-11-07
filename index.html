@@ -130,6 +130,11 @@
       Image without text
     </a>
   </div>
+  <div class="footer">
+    2018 | 
+    <a href="https://github.com/vncegd">Vncegd</a> |
+    <a href="https://github.com/airicbear">Airicbear</a>
+  </div>
   <script>
     // Smooth anchor jump
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -142,7 +147,7 @@
     });
 
     // Focus image with delay to allow smooth anchor jump
-    let focusDelay = (className, index, delay = 500) => {
+    let focusDelay = (className, index, delay = 1000) => {
       setTimeout(() => {
         document.getElementsByClassName(className)[index].focus()
       }, delay);
