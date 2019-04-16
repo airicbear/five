@@ -21,27 +21,27 @@
   <div class="top h-100" id="top">
     <div class="col">
       <div class="row-5">
-        <a href="#blue" class="nav-link fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 0);">
+        <a href="#blue" class="nav-link fs-0" tabindex="-1">
           <div class="blue-link div-link" tabindex="0">Scroll to the blue image. </div>
         </a>
       </div>
       <div class="row-5">
-        <a href="#red" class="nav-link fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 1);">
+        <a href="#red" class="nav-link fs-0" tabindex="-1">
           <div class="red-link div-link" tabindex="0">Scroll to the red image. </div>
         </a>
       </div>
       <div class="row-5">
-        <a href="#green" class="nav-link fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 2);">
+        <a href="#green" class="nav-link fs-0" tabindex="-1">
           <div class="green-link div-link" tabindex="0">Scroll to the green image. </div>
         </a>
       </div>
       <div class="row-5">
-        <a href="#yellow" class="nav-link fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 3);">
+        <a href="#yellow" class="nav-link fs-0" tabindex="-1">
           <div class="yellow-link div-link" tabindex="0">Scroll to the yellow image. </div>
         </a>
       </div>
       <div class="row-5">
-        <a href="#grey" class="nav-link fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 4);">
+        <a href="#grey" class="nav-link fs-0" tabindex="-1">
           <div class="grey-link div-link" tabindex="0">Scroll to the grey image. </div>
         </a>
       </div>
@@ -60,7 +60,7 @@
     </div>
   </div>
   <div class="blue image-container h-100" id="blue">
-    <a href="#top" class="fs-0" tabindex="-1" onclick="focusDelay('blue-link', 0);">
+    <a href="#top" class="fs-0" tabindex="-1">
       Scroll up to the top.
       <i class="fas fa-chevron-up" tabindex="0"></i>
     </a>
@@ -69,13 +69,13 @@
       <i class="fas fa-external-link-alt"></i>
       Image without text
     </a>
-    <a href="#red" class="fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 1);">
+    <a href="#red" class="fs-0" tabindex="-1">
       Scroll down to the red image.
       <i class="fas fa-chevron-down" tabindex="0"></i>
     </a>
   </div>
   <div class="red image-container h-100" id="red">
-    <a href="#blue" class="fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 0);">
+    <a href="#blue" class="fs-0" tabindex="-1">
       Scroll up to the blue image.
       <i class="fas fa-chevron-up" tabindex="0"></i>
     </a>
@@ -84,13 +84,13 @@
       <i class="fas fa-external-link-alt"></i>
       Image without text
     </a>
-    <a href="#green" class="fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 2);">
+    <a href="#green" class="fs-0" tabindex="-1">
       Scroll down to the green image.
       <i class="fas fa-chevron-down" tabindex="0"></i>
     </a>
   </div>
   <div class="green image-container h-100" id="green">
-    <a href="#red" class="fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 1);">
+    <a href="#red" class="fs-0" tabindex="-1">
       Scroll up to the red image.
       <i class="fas fa-chevron-up" tabindex="0"></i>
     </a>
@@ -99,13 +99,13 @@
       <i class="fas fa-external-link-alt"></i>
       Image without text
     </a>
-    <a href="#yellow" class="fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 3);">
+    <a href="#yellow" class="fs-0" tabindex="-1">
       Scroll down to the yellow image.
       <i class="fas fa-chevron-down" tabindex="0"></i>
     </a>
   </div>
   <div class="yellow image-container h-100" id="yellow">
-    <a href="#green" class="fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 2);">
+    <a href="#green" class="fs-0" tabindex="-1">
       Scroll up to the green image.
       <i class="fas fa-chevron-up" tabindex="0"></i>
     </a>
@@ -114,13 +114,13 @@
       <i class="fas fa-external-link-alt"></i>
       Image without text
     </a>
-    <a href="#grey" class="fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 4);">
+    <a href="#grey" class="fs-0" tabindex="-1">
       Scroll down to the grey image.
       <i class="fas fa-chevron-down" tabindex="0"></i>
     </a>
   </div>
   <div class="grey image-container h-100" id="grey">
-    <a href="#yellow" class="fs-0" tabindex="-1" onclick="focusDelay('pxart-img', 3);">
+    <a href="#yellow" class="fs-0" tabindex="-1">
       Scroll up to the yellow image.
       <i class="fas fa-chevron-up" tabindex="0"></i>
     </a>
@@ -145,13 +145,6 @@
         });
       });
     });
-
-    // Focus image with delay to allow smooth anchor jump
-    let focusDelay = (className, index, delay = 1000) => {
-      setTimeout(() => {
-        document.getElementsByClassName(className)[index].focus()
-      }, delay);
-    };
   </script>
 </body>
 
